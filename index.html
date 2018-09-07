@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Review Me</title>
+  </head>
+  <body>
+        <img src = "https://en.gravatar.com/userimage/143217564/3f6791df8775b29c2e2dbfbea3207a0d.jpg" alt = "franklin's profile picture">
+    <h1 id="title">Survey Form</h1>
+<div id="form-outer">
+  <p id="description">
+     Let me know what you think about me
+  </p>
+  <form id="survey-form" method="GET" action=" ">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">What describes your Current Position?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+          <option value = "student">Student</option>
+           <option value ="job">Full time Job</option>
+            <option value ="preferNo">Prefer not to say</option>
+          <option value ="other">Other</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">*How likely would you tell another freind of yours about Franklin</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like"What do you like about Franklin?</label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+          <option disabled selected value>Select an option</option>
+             <option value="humour">Sense of Humour</option>
+             <option value ="attitude">Atittude</option>
+             <option value ="appearance">Physical Appearance</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">What improvements can Franklin do about himself<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+         <ul id = "preferences" style="list-style:none;">
+              <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Attitude</label></li>
+              <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Sense of Humour</label></li>
+              <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Physical Appearance</label></li>
+              <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Way of talking</label></li>
+              <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Attitude Towards Work</label></li>
+              <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Punctuality</label></li>
+              <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Keeping Promises</label></li>
+              <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Sprirtuality</label></li>
+              <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Cooking skills</label></li>
+              <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Sleeping hours</label></li>
+            </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>
